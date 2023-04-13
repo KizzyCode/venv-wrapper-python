@@ -1,0 +1,5 @@
+# Ignore macOS clutter
+.DS_Store
+
+# Ignore build artifacts
+__pycache__
