@@ -24,7 +24,7 @@ class Venv:
         """Setups the venv"""
         # Create or update the venv
         print(f"Setup venv in { self._venv_dir }...")
-        env_builder = EnvBuilder(upgrade=True, with_pip=True, prompt=self.name, upgrade_deps=True)
+        env_builder = EnvBuilder(upgrade=True, with_pip=True, prompt=self.name, upgrade_deps=True, symlinks=True)
         env_builder.create(self._venv_dir)
 
         # Install dependencies
